@@ -4,7 +4,7 @@
 
 Submitted by: **Olakitan Oguntuase**
 
-Time spent: **#** hours spent in total
+Time spent: **6** hours spent in total
 
 Link to project: (insert your link here, should start with https://glitch.com...)
 
@@ -47,7 +47,7 @@ Here's a walkthrough of implemented user stories:
 [W3schools, Mozilla developer]
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+[YOUR ANSWER HER]
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 [YOUR ANSWER HERE]
