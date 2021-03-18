@@ -28,7 +28,8 @@ const freqMap = {
   2: 329.6,
   3: 392,
   4: 466.2,
-  5: 420
+  5: 410.5,
+  6: 295.7
 }
 function playTone(btn,len){ 
   o.frequency.value = freqMap[btn]
@@ -78,7 +79,7 @@ function playClueSequence(){
     setTimeout(playSingleClue,delay,pattern[i]) // set a timeout to play that clue
     delay += clueHoldTime 
     delay += cluePauseTime;
-    clueHoldTime -= 43;
+    clueHoldTime -= 37;
   }
 }
 
@@ -98,7 +99,11 @@ function guess(btn){
       guesscount++;
     }
   }else{
+    mistakes +=1
+    playClueSequence();
+    if (mistakes == 3){
     lose_game();
+    }
   }
 }
 
