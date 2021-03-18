@@ -2,7 +2,7 @@
 
 **Memory Game** is a Light & Sound Memory game to apply for CodePath's SITE Program. 
 
-Submitted by: **NAME**
+Submitted by: **Olakitan Oguntuase**
 
 Time spent: **#** hours spent in total
 
@@ -59,7 +59,7 @@ Here's a walkthrough of implemented user stories:
 
 ## License
 
-    Copyright [YOUR NAME]
+    Copyright [Olakitan Oguntuase]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
