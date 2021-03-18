@@ -18,21 +18,20 @@ button {
   padding: 10px;
   border-radius: 10px;
 }
+#tile1 {background: firebrick;}
+#tile1:active, #tile1.lit{background:floralwhite;}
 
-#tile1 {background: lightgreen;}
-#tile1:active, #tile1.lit{background:green;}
+#tile2 {background: indigo;}
+#tile2:active, #tile2.lit{background:hotpink;}
 
-#tile2 {background: lightblue;}
-#tile2:active, #tile2.lit{background:blue;}
+#tile3 {background: lavender;}
+#tile3:active, #tile3.lit{background:lime;}
 
-#tile3 {background: pink;}
-#tile3:active, #tile3.lit{background:red;}
+#tile4 {background:moccasin;}
+#tile4:active, #tile4.lit{background:maroon;}
 
-#tile4 {background: lightyellow;}
-#tile4:active, #tile4.lit{background:yellow;}
-
-#tile5 {background: lightpurple;}
-#tile5:active, #tile5.lit{background:orange;}
+#tile5 {background: burlywood;}
+#tile5:active, #tile5.lit{background:coral;}
 
 #tile6 {background: purple;}
 #tile6:active, #tile6.lit{background:brown;}
