@@ -31,8 +31,11 @@ button {
 #tile4 {background: lightyellow;}
 #tile4:active, #tile4.lit{background:yellow;}
 
-#tile5 {background: purple;}
+#tile5 {background: lightpurple;}
 #tile5:active, #tile5.lit{background:orange;}
+
+#tile6 {background: purple;}
+#tile6:active, #tile6.lit{background:brown;}
 
 #tile_Area button{
   width:170px;
