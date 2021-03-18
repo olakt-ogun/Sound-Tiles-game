@@ -1,6 +1,6 @@
-# Pre-work - *Memory Game*
+# Pre-work - *Sound Tiles*
 
-**Memory Game** is a Light & Sound Memory game to apply for CodePath's SITE Program. 
+**Sound Tiles** is a Light & Sound Memory game to apply for CodePath's SITE Program. 
 
 Submitted by: **Olakitan Oguntuase**
 
@@ -44,7 +44,7 @@ Here's a walkthrough of implemented user stories:
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+[W3schools, Mozilla developer]
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 [YOUR ANSWER HERE]
