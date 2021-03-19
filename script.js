@@ -5,7 +5,7 @@ const nextClueWaitTime = 1000;
 var pattern = [];
 var progress = 0; 
 var gamePlaying = false;
-var tonePlaying = false;
+var Play_tone = false;
 var volume = 0.8;
 var guesscount = 0;
 var mistakes = 0;
@@ -18,6 +18,7 @@ function rand_pattern(){
   }
 }
 
+
 function Start_game(){
     progress = 0;
     mistakes = 0;
@@ -25,7 +26,7 @@ function Start_game(){
     gamePlaying = true;
     document.getElementById("Start_button").classList.add("hidden");
     document.getElementById("Stop_button").classList.remove("hidden");
-    playClueSequence();
+    Sound_sequence();
 }
 
 function Stop_game(){
@@ -34,7 +35,7 @@ function Stop_game(){
     document.getElementById("Stop_button").classList.add("hidden");  
 }
 
-const freqMap = {
+const Sounds = {
   1: 261.6,
   2: 329.6,
   3: 392,
@@ -42,24 +43,24 @@ const freqMap = {
   5: 420,
   6: 295.7
 }
-function playTone(btn,len){ 
-  o.frequency.value = freqMap[btn]
+function playTone(tile,len){ 
+  o.frequency.value = Sounds[tile]
   g.gain.setTargetAtTime(volume,context.currentTime + 0.05,0.025)
-  tonePlaying = true
+  Play_tone = true
   setTimeout(function(){
     stopTone()
   },len)
 }
-function startTone(btn){
-  if(!tonePlaying){
-    o.frequency.value = freqMap[btn]
+function startTone(tile){
+  if(!Play_tone){
+    o.frequency.value = Sounds[tile]
     g.gain.setTargetAtTime(volume,context.currentTime + 0.05,0.025)
-    tonePlaying = true
+    Play_tone = true
   }
 }
 function stopTone(){
     g.gain.setTargetAtTime(0,context.currentTime + 0.05,0.025)
-    tonePlaying = false
+    Play_tone = false
 }
 
 var context = new AudioContext()
@@ -70,19 +71,19 @@ g.gain.setValueAtTime(0,context.currentTime)
 o.connect(g)
 o.start(0)
 
-function lightButton(btn) {document.getElementById("tile" + btn).classList.add("lit")}
+function lightButton(tile) {document.getElementById("tile" + tile).classList.add("lit")}
 
-function clearButton(btn) {document.getElementById("tile" + btn).classList.remove("lit")}
+function clearButton(tile) {document.getElementById("tile" + tile).classList.remove("lit")}
 
-function playSingleClue(btn){
+function playSingleClue(tile){
   if(gamePlaying){
-    lightButton(btn);
-    playTone(btn,clueHoldTime);
-    setTimeout(clearButton,clueHoldTime,btn);
+    lightButton(tile);
+    playTone(tile,clueHoldTime);
+    setTimeout(clearButton,clueHoldTime,tile);
   }
 }
 
-function playClueSequence(){
+function Sound_sequence(){
   guesscount = 0;
   let delay = nextClueWaitTime; 
   for(let i=0;i<=progress;i++){ 
@@ -94,24 +95,24 @@ function playClueSequence(){
   }
 }
 
-function guess(btn){
-  console.log("user guessed: " + btn);
+function guess(tile){
+  console.log("user guessed: " + tile);
   if(!gamePlaying){
     return;
   }
-   if(pattern[guesscount] == btn){
+   if(pattern[guesscount] == tile){
     if(guesscount == progress){
       if(progress == pattern.length - 1) {Win_game();}
       else{
         progress++;
-        playClueSequence();
+        Sound_sequence();
       }
     }else{
       guesscount++;
     }
   }else{
     mistakes +=1
-    playClueSequence();
+    Sound_sequence();
     if (mistakes == 3){
     lose_game();
     }
