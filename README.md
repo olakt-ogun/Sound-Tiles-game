@@ -53,6 +53,7 @@ Here's a walkthrough of implemented user stories:
 [YOUR ANSWER HERE]
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
+
 [If I had additional hours, I would spend them researching how I can properly Implement the last two additional features as these features would make the game a little more complex. Also, If I had more time or If I had experience in any of these languages, I would add different levels to the game where each level adds a new feature in addition to the previous ones in the lower level. For example, level one has no additional features, level two has the first additional feature, level three has the first two and so on.]
 
 
