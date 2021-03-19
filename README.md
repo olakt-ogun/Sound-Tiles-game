@@ -39,7 +39,9 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![https://github.com/olakt-ogun/Sound-Tiles-game/blob/main/sound_tiles.gif]
+https://github.com/olakt-ogun/Sound-Tiles-game/blob/main/sound_tiles.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [ScreenToGif](https://www.screentogif.com/).
 
 
 ## Reflection Questions
