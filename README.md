@@ -39,7 +39,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![](https://github.com/olakt-ogun/Sound-Tiles-game/blob/main/Video%20walkthrough.mp4)
+![https://github.com/olakt-ogun/Sound-Tiles-game/blob/main/Video%20walkthrough.mp4](https://github.com/olakt-ogun/Sound-Tiles-game/blob/main/Video%20walkthrough.mp4)
 
 
 ## Reflection Questions
