@@ -47,7 +47,7 @@ Here's a walkthrough of implemented user stories:
 [https://www.w3schools.com/, https://developer.mozilla.org/]
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HER]
+[While creating this poject, I couldn't test run the code every couple of lines  because some of  the steps required the next, so I had to wait to finish with the mandatory parts of the project before I could run it. I changed the some parts of the code like the variables, the name of some other stuffs like the buttons, and some other things so when I ran the code, there were bugs caused by inconsistent variable names, other bugs I encountered were syntax errors caused my little mistakes like not putting a coma, or not closing a curly bracket. To fix these bugs, I had to open the console to see what lines of the code were causing errors like I always do in python. Also, I had to crosscheck my code with the available one on the prework webpage. Another challenge I had was adding the additional feature where the user gets 3 strikes instead of just loosing the game. I had to create a new variable and increase it as the user makes a mistake for each pattern]
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 [YOUR ANSWER HERE]
