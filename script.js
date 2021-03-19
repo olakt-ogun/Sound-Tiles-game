@@ -2,7 +2,7 @@ var clueHoldTime = 1000;
 const clueHoldTime1 = 1000;
 const cluePauseTime = 333;
 const nextClueWaitTime = 1000;
-var pattern = [0, 0, 0, 0, 0, 0, 0, 0,];
+var pattern = [];
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
@@ -11,13 +11,19 @@ var guesscount = 0;
 var mistakes = 0;
 var loop= 0;
 
-for (loop = 0; loop < pattern.length; loop++) {
-pattern[loop] = Math.floor(Math.random() * (6 - 1) + 1);
+function rand_pattern(){
+  pattern = []
+  for (loop = 0; loop < 8; loop++) {
+  pattern.push (Math.floor(Math.random() * (6 - 1) + 1));
+  }
+  return pattern
 }
+console.log(rand_pattern())
 
 function Start_game(){
     progress = 0;
     mistakes = 0;
+    rand_pattern();
     gamePlaying = true;
     document.getElementById("Start_button").classList.add("hidden");
     document.getElementById("Stop_button").classList.remove("hidden");
@@ -31,10 +37,10 @@ function Stop_game(){
 }
 
 const freqMap = {
-  1: 250.3,
-  2: 319.5,
-  3: 385,
-  4: 470.4,
+  1: 261.6,
+  2: 329.6,
+  3: 392,
+  4: 466.2,
   5: 420,
   6: 295.7
 }
