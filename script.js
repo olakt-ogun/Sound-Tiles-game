@@ -16,9 +16,7 @@ function rand_pattern(){
   for (loop = 0; loop < 8; loop++) {
   pattern.push (Math.floor(Math.random() * (6 - 1) + 1));
   }
-  return pattern
 }
-console.log(rand_pattern())
 
 function Start_game(){
     progress = 0;
